@@ -6,8 +6,8 @@ const contacts = [
       coords: {
         lat: 0,
         long: 0.546756,
-      }
-    }
+      },
+    },
   },
   {
     name: 'Eric',
@@ -16,8 +16,8 @@ const contacts = [
     name: 'Paul',
     address: {
       city: 'Nice',
-    }
-  }
+    },
+  },
 ];
 
 for (const c of contacts) {
@@ -26,5 +26,4 @@ for (const c of contacts) {
   const lat = c.address?.coords?.lat ?? 0.5;
 
   console.log(lat);
-
 }
