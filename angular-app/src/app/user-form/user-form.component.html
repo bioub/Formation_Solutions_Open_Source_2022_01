@@ -1,0 +1,17 @@
+<form (submit)="create($event)">
+  <p>
+    Prénom :
+    <input type="text" name="prenom" [value]="user.prenom" (input)="user.prenom = $any($event.target).value" />
+  </p>
+  <p>
+    Email :
+    <input type="email" name="email" [value]="user.email"  (input)="updateEmail($event)" />
+  </p>
+  <p>
+    Compte actif :
+    <input type="checkbox" name="active" [checked]="user.isActive" [class.active]="user.isActive" />
+  </p>
+  <p>
+    <button>Envoyer</button>
+  </p>
+</form>

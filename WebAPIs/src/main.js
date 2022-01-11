@@ -28,6 +28,7 @@ containerEl.addEventListener('click', (event) => {
   /** @type {HTMLElement} */
   const target = event.target;
 
+
   if (target.classList.contains('todo-remove')) {
     target.closest('.todo-row').remove();
   }
