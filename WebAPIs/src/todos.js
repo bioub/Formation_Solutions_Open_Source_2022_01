@@ -15,9 +15,20 @@ export function createTodoRow(todo) {
   const divEl = document.createElement('div');
   divEl.className = 'todo-row';
 
+  const checkboxEl = document.createElement('input');
+  checkboxEl.className = 'todo-completed';
+  checkboxEl.type = 'checkbox';
+  checkboxEl.checked = todo.completed;
+  divEl.appendChild(checkboxEl);
+
   const spanEl = document.createElement('span');
   spanEl.innerText = todo.title;
   divEl.appendChild(spanEl);
+
+  const buttonEl = document.createElement('button');
+  buttonEl.className = 'todo-remove';
+  buttonEl.innerText = '-';
+  divEl.appendChild(buttonEl);
 
   return divEl;
 }

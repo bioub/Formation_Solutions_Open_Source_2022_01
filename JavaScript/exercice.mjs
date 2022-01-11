@@ -44,3 +44,12 @@ function jouer() {
 const entierAlea = getRandomInt(0, 100);
 const essais = [];
 jouer();
+
+// pile d'appels
+// ^
+// |
+// |                     question           question
+// |question             jouer              jouer
+// |jouer                =>                 =>
+// +-------------------------------------------------> temps
+//

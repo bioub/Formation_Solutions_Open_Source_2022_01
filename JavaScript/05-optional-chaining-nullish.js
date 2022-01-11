@@ -21,9 +21,15 @@ const contacts = [
 ];
 
 for (const c of contacts) {
-  // Optional Chaining ?
-  // Nullish Coalescing Operator ??
+  // ES2020 Optional Chaining ?
+  // ES2020 Nullish Coalescing Operator ??
   const lat = c.address?.coords?.lat ?? 0.5;
+
+  // let lat = c.address && c.address.coords && c.address.coords.lat;
+
+  // if (lat === undefined) {
+  //   lat = 0.5;
+  // }
 
   console.log(lat);
 }

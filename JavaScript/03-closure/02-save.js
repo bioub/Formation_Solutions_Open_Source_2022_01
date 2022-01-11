@@ -2,8 +2,7 @@ globalThis.varGlobale = 'globale';
 
 const varModule = 'module';
 
-function externe() {
-  const varClosure = 'closure';
+function externe(varClosure) {
 
   function interne() {
     const varLocale = 'locale';
@@ -17,8 +16,11 @@ function externe() {
   return interne;
 }
 
-const interneFromExterne = externe();
-interneFromExterne();
+const hello = externe('Hello');
+hello();
+
+const bonjour = externe('Bonjour');
+bonjour();
 
 // pile d'appels
 // ^
