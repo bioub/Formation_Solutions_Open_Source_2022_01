@@ -1,0 +1,39 @@
+<!--
+  Exercice 2 :
+  Ecouter la saisi du champs todo-input (comme dans Helloworld)
+  Ecouter le submit du formulaire et ajouter au tableau un élement
+  {
+    id: Math.random(),
+    title: 'La valeur saisie dans le champ',
+    completed: false,
+  }
+  (le composant se raffraichit tout seul)
+-->
+<form class="todo-form">
+  <input type="checkbox" class="todo-toggle-all" />
+  <input class="todo-input" />
+  <button>+</button>
+</form>
+<div class="todo-container">
+  <!--
+    Exercice 1 :
+    avec *ngFor boucler sur le tableaux todos
+    et afficher les todos comme ci-dessous
+    - la checkbox doit être coché en fonction de la clé completed
+    - la balise span doit afficher la valeur de la clé title
+  -->
+  <div class="todo-row">
+    <input type="checkbox" />
+    <span>Acheter du pain</span>
+    <button>-</button>
+  </div>
+</div>
+
+<!--
+  Exercice Optionnel :
+  Comme dans le projet précédent
+  - Supprimer les todos au clic du bouton moins
+  - Tout cocher / tout décocher
+  - Pouvoir éditer au double-click
+  - Le footer comme sur todomvc.com
+-->

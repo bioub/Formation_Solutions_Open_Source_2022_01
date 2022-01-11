@@ -1,0 +1,16 @@
+/* .menu {
+  display: none;
+}
+
+.menu.open {
+  display: block;
+} */
+
+
+.menu {
+  border: 1px solid black;
+}
+
+.item {
+  padding: 4px;
+}

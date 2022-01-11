@@ -10,6 +10,8 @@ import { ReplacePipe } from './replace.pipe';
 import { CounterComponent } from './counter/counter.component';
 import { HelloworldComponent } from './helloworld/helloworld.component';
 import { MultiStateButtonComponent } from './multi-state-button/multi-state-button.component';
+import { SelectComponent } from './select/select.component';
+import { TodosComponent } from './todos/todos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MultiStateButtonComponent } from './multi-state-button/multi-state-butt
     ReplacePipe,
     CounterComponent,
     HelloworldComponent,
-    MultiStateButtonComponent
+    MultiStateButtonComponent,
+    SelectComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,
