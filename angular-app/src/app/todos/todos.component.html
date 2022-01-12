@@ -9,9 +9,9 @@
   }
   (le composant se raffraichit tout seul)
 -->
-<form class="todo-form">
+<form class="todo-form" (submit)="addTodo($event)">
   <input type="checkbox" class="todo-toggle-all" />
-  <input class="todo-input" />
+  <input class="todo-input" [value]="value" (input)="value = $any($event.target).value"  />
   <button>+</button>
 </form>
 <div class="todo-container">
@@ -22,10 +22,11 @@
     - la checkbox doit être coché en fonction de la clé completed
     - la balise span doit afficher la valeur de la clé title
   -->
-  <div class="todo-row">
-    <input type="checkbox" />
-    <span>Acheter du pain</span>
-    <button>-</button>
+  <div class="todo-row" *ngFor="let todo of todos">
+    <input type="checkbox" [checked]="todo.completed" />
+    <span (dblclick)="idTodoEdition = todo.id" *ngIf="idTodoEdition !== todo.id">{{ todo.title }}</span>
+    <input class="todo-edit" [value]="todo.title" (input)="todo.title = $any($event.target).value" *ngIf="idTodoEdition === todo.id" />
+    <button (click)="deleteTodo(todo)">-</button>
   </div>
 </div>
 

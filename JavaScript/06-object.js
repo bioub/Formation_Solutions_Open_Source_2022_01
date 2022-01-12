@@ -27,6 +27,11 @@ console.log(coords.x); // 1
 console.log(coords.y); // 2
 console.log(coords.z); // 3
 
+const method = 'log';
+console[method](coords['x']); // 1
+console[method](coords['y']); // 2
+console[method](coords['z']); // 3
+
 // Constructor
 // function Contact(name) {
 //   this.name = name;

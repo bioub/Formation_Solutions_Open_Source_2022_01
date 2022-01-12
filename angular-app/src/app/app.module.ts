@@ -12,6 +12,9 @@ import { HelloworldComponent } from './helloworld/helloworld.component';
 import { MultiStateButtonComponent } from './multi-state-button/multi-state-button.component';
 import { SelectComponent } from './select/select.component';
 import { TodosComponent } from './todos/todos.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +27,13 @@ import { TodosComponent } from './todos/todos.component';
     HelloworldComponent,
     MultiStateButtonComponent,
     SelectComponent,
-    TodosComponent
+    TodosComponent,
+    HomeComponent,
+    AboutComponent,
+    NotFoundComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, // exporte CommonModule, lui même exporte ngIf, ngForOf
     AppRoutingModule
   ],
   providers: [],
