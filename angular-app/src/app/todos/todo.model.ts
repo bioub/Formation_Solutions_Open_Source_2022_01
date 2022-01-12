@@ -3,3 +3,15 @@ export interface Todo {
   title?: string;
   completed?: boolean;
 }
+
+
+this.setState({
+  todos: [
+    ...this.state.todos,
+    {
+      id: Math.random(),
+      title: this.state.value,
+      completed: false,
+    },
+  ],
+});

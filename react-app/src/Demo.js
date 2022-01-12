@@ -1,6 +1,9 @@
 import React from 'react';
 import Counter from './Counter';
 import Hello from './Hello';
+import Helloworld from './Helloworld';
+import MultiStateButton from './MultiStateButton';
+import Select from './Select';
 import UserForm from './UserForm';
 
 function Demo() {
@@ -31,6 +34,12 @@ function Demo() {
       <Counter />
       <h2>user-form</h2>
       <UserForm />
+      <h2>helloworld</h2>
+      <Helloworld />
+      <h2>multi-state-button</h2>
+      <MultiStateButton items={['Un', 'Deux', 'Trois']} />
+      <h2>select</h2>
+      <Select />
     </div>
   );
 }
