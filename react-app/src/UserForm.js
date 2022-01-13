@@ -16,9 +16,12 @@ export class UserForm extends Component {
       [name]: value,
     });
   };
+  handleSubmit = (event) => {
+    event.preventDefault();
+  };
   render() {
     return (
-      <form className="UserForm">
+      <form className="UserForm" onSubmit={this.handleSubmit}>
         <p>
           Prénom :
           <input

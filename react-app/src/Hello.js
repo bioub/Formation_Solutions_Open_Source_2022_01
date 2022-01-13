@@ -1,5 +1,5 @@
-function Hello(props) {
-  const name = props.name ?? 'Romain';
+function Hello({ name = 'Romain' }) {
+  // const name = props.name ?? 'Romain';
 
   return (
     <div className="Hello">

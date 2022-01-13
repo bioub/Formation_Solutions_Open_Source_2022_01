@@ -1,3 +1,5 @@
+import styles from './Select.module.css';
+
 import React, { Component } from 'react';
 
 export class Select extends Component {
@@ -34,7 +36,7 @@ export class Select extends Component {
     return (
       <div className="Select">
         <div onClick={this.handleClickSelected}>{selected}</div>
-        {menuOpen && <div className="menu">{itemsJsx}</div>}
+        {menuOpen && <div className={styles.menu}>{itemsJsx}</div>}
       </div>
     );
   }

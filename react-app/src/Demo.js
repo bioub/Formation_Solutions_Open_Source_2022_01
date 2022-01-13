@@ -4,6 +4,7 @@ import Hello from './Hello';
 import Helloworld from './Helloworld';
 import MultiStateButton from './MultiStateButton';
 import Select from './Select';
+import Todos from './Todos';
 import UserForm from './UserForm';
 
 function Demo() {
@@ -22,7 +23,7 @@ function Demo() {
 
   //  return divEl;
   // return React.createElement('div', { className: 'Demo' },
-  //   React.createElement('h2', {}, 'hello')
+  //   React.createElement('h2', {}, 'hello'),
   // );
 
   return (
@@ -30,7 +31,7 @@ function Demo() {
       <h2>hello</h2>
       <Hello name={"Bob"} />
       <Hello name="Bob" />
-      <h2>counter</h2>
+      <h2 className="menu">counter</h2>
       <Counter />
       <h2>user-form</h2>
       <UserForm />
@@ -40,6 +41,8 @@ function Demo() {
       <MultiStateButton items={['Un', 'Deux', 'Trois']} />
       <h2>select</h2>
       <Select />
+      <h2>todos</h2>
+      <Todos />
     </div>
   );
 }
