@@ -13,6 +13,8 @@
     <MultiStateButton :items="['Toto', 'Titi', 'Tata']" />
     <h2>Select</h2>
     <Select />
+    <h2>Todos</h2>
+    <Todos />
   </div>
 </template>
 
@@ -24,6 +26,7 @@ import UserForm from '@/components/UserForm.vue'
 import HelloWorld from '@/components/HelloWorld.vue'
 import MultiStateButton from '@/components/MultiStateButton.vue'
 import Select from '@/components/Select.vue'
+import Todos from '@/components/Todos.vue'
 
 export default {
   name: 'Home',
@@ -33,7 +36,8 @@ export default {
     UserForm,
     HelloWorld,
     MultiStateButton,
-    Select
+    Select,
+    Todos
   }
 }
 </script>
