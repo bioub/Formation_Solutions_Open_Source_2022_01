@@ -13,6 +13,12 @@
 		},
 		{
 			"path": "react-app"
+		},
+		{
+			"path": "vue-app-buildless"
+		},
+		{
+			"path": "vue-app"
 		}
 	],
 	"settings": {}
